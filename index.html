@@ -13,31 +13,59 @@
 <body>
     <!-- Header Content -->
     <header>
-        <h1>Website Konversi Suhu - Albert</h1>
+        <h1>Konversi Suhu - Albert</h1>
+        <nav>
+            <a href="#Konversi">Konversi</a>
+            <a href="#Cara-Konversi">Cara Konversi</a>
+            <a href="#Sejarah">Sejarah</a>
+        </nav>
     </header>
+
 
     <!-- Main Content -->
     <main>
+
+        <section class="gambar">
+            <img src="images\suhu.png">
+        </section>
+
         <!-- Introduction -->
-        <section>
+        <section class="padding-medium" id="Konversi">
             <p>Masukkan suhu derajat Celcius (&deg;C) ke kotak dibawah...</p>
         </section>
 
         <!-- Form Konversi Suhu -->
-        <form class="padding-medium">
-            <!-- Inputan suhu -->
-            <div>
-                <label for="input-suhu">Celcius (&deg;C):</label>
-                <input type="number" id="input-suhu" name="suhu">
-            </div>
+        <section class="padding-medium">
+
+        <!-- Inputan suhu -->
+          <div>
+            <label for="input-suhu">Masukkan Suhu:</label>
+            <input type="number" id="input-suhu" name="suhu">
+         </div>
+
+        <!-- Pilihan skala -->
+          <div>
+            <label for="from-scale">Dari:</label>
+            <select id="from-scale">
+                <option value="C">Celsius (°C)</option>
+                <option value="F">Fahrenheit (°F)</option>
+            </select>
+
+             <label for="to-scale">Ke:</label>
+            <select id="to-scale">
+                <option value="F">Fahrenheit (°F)</option>
+                <option value="C">Celsius (°C)</option>
+            </select>
+          </div>
+
 
             <!-- Tombol Action -->
-            <div>
-                <button class="bg-lightseagreen">Konversi</button>
-                <button class="bg-lightcoral">Reset</button>
-                <button class="bg-lightblue">Reverse</button>
-            </div>
-        </form>
+          <div>
+                <button class="bg-konversi">Konversi</button>
+                <button class="bg-reset">Reset</button>
+                <button class="bg-reverse">Reverse</button>
+          </div>
+        </section>
 
         <!-- Hasil Konversi -->
         <section class="padding-medium">
@@ -50,32 +78,46 @@
         <!-- Penjelasan -->
         <section class="padding-medium">
             <div>
-                <label for="detail-suhu">Penjelasan:</label>
+                <label for="detail-suhu">Hitungan:</label>
                 <textarea id="detail-suhu" readonly></textarea>
             </div>
         </section>
 
         <!-- Keterangan Formula -->
-        <section>
-            <header>
+        <section class="padding-medium" id="Cara-Konversi">
+            <header2>
                 <h2>Cara Konversi Celcius (&deg;C) ke Fahrenheit (&deg;F)</h2>
-            </header>
+            </header2>
 
             <hr />
 
             <div>
                 <p>Introduction dari rumus konversi suhu...</p>
-                <p class="rumus-content">S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 9/5) + 32</p>
+                <p class="rumus-content"> <strong><em>S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> × 9/5) + 32</em></strong> </p>
                 <p>Atau</p>
-                <p class="rumus-content">S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 1.8) + 32</p>
+                <p class="rumus-content"> <strong><em>S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> × 1.8) + 32</em></strong> </p>
             </div>
         </section>
+
+        <section class="padding-high" id="Sejarah">
+            <header3>
+                <h2>Sejarah</h2>
+            </header3>
+
+            <hr />
+
+                    <p>Skala Fahrenheit ditemukan oleh Daniel Gabriel Fahrenheit pada tahun 1724, dengan titik nol berdasarkan suhu campuran es, air, dan garam. Ia menetapkan suhu tubuh manusia sekitar 96°F dan titik beku air pada 32°F. Sementara itu, skala Celsius ditemukan oleh Anders Celsius, seorang astronom asal Swedia, pada tahun 1742. Awalnya, ia menetapkan titik didih air pada 0°C dan titik beku pada 100°C, namun kemudian dibalik menjadi seperti yang kita gunakan sekarang: titik beku air pada 0°C dan titik didih pada 100°C.</p>
+            
     </main>
 
     <!-- Footer Content -->
     <footer>
-        <p>&copy; 2025 Albert Vercelli Pyanillo</p>
+        <p>&copy; 2025 Albert Vercelli Pyanillo
+        </p>
     </footer>
+
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
